@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dogcover"
+    android:padding="10dp"
+    tools:context="com.hfad.registrationlogin.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/discoverApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover app"
+                android:background="@drawable/button_border"
+                android:layout_weight="0.5"
+                android:textColor="@color/colorOrange"
+                android:onClick="signInFirebase"/>
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_border"
+                android:textColor="@color/colorWhite"
+                android:onClick="signUpFirebase"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:background="@color/colorOrange"
+            android:textColor="@color/colorWhite"
+            android:onClick="signInFirebase"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
